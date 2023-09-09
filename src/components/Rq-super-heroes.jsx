@@ -7,12 +7,15 @@ const fetchSuperHeros = () =>{
 }
 
 function RqSuperHeroes() {
-  const {isLoading,data} =useQuery('super-heroes',fetchSuperHeros)
+  const {isLoading,data , isError ,error} =useQuery('super-heroes',fetchSuperHeros)
 
   // const {isLoading,data} =useQuery('super-heroes',()=>{ return axios.get('http://localhost:3000/superheroes')})
 
   if(isLoading){
     return (<h1>Loading...</h1>)
+  }
+  if(isError){
+    return (<h1> {error.message}</h1>)
   }
   
   return (

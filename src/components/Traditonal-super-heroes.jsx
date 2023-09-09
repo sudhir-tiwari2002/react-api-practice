@@ -4,13 +4,16 @@ import axios from 'axios';
 function TraditonalSuperHeroes() {
   const [isloading,setIsLoading] =useState(true)
   const [data, setData] =useState([])
+  const [error, setError] =useState('')
 
 
   useEffect(()=>{
     axios.get('http://localhost:3000/superheroes').then((res)=>{
       setData(res?.data)
       setIsLoading(false)
-    })
+    }).catch(error=>{
+        setError(error.message)
+  })
   },[])
 
   if(isloading){
