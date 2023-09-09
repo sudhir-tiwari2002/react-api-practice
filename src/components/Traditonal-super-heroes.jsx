@@ -20,7 +20,7 @@ function TraditonalSuperHeroes() {
 
   return (
     <>
-    <h1 className='flex justify-center font-extrabold text-7xl'>Super Heroes Page </h1>
+    <h1 className='flex justify-center font-extrabold text-7xl'>Traditonal Super Heroes Page </h1>
     {
       data?.map((item)=>(
         <div key={item?.id} className='gap-5 bg-red-200'>
