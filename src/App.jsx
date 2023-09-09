@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import {QueryClientProvider , QueryClient} from 'react-query'
+import {ReactQueryDevtools} from 'react-query/devtools'
 
 import Menu from './components/Menu';
 import TraditonalSuperHeroes from './components/Traditonal-super-heroes';
@@ -27,6 +28,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       </div>
+      <ReactQueryDevtools initialIsOpen={false} position='bottom-left'/>
       </QueryClientProvider>
   );
 }
