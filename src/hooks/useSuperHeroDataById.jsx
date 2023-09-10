@@ -20,6 +20,6 @@ const fetchSuperHero = ({queryKey}) =>{
 
 
 export const useSuperHeroDataById = (heroId) =>{
-    console.log(heroId,".......")
+    // console.log(heroId,".......")
     return useQuery(['super-hero',heroId],fetchSuperHero)
 }

@@ -21,5 +21,17 @@
       "id": 4,
       "name": "Awneesh Mishra"
     }
+  ],
+  "users":[
+    {
+      "id":"skt@gmail.com",
+      "channelId":"SudhirTiwari"
+    }
+  ],
+  "channels":[
+    {
+      "id":"SudhirTiwari",
+      "courses":["react","vue","angular"]
+    }
   ]
 }
