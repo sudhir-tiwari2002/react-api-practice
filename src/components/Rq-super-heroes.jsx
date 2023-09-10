@@ -16,8 +16,8 @@ function RqSuperHeroes() {
         refetchOnMount : 'always',     // by default it is set to true if it is set to true query will refech on mount if the data is stale , data will fetch every time component mount
                                       // by setting the refetchOnmount always in the string the refeching will be done irreseptive on the stale , true is the best option 
       refetchOnWindowFocus:true,     // bydefault it is set to true , everytime when user open the particular ui tab refech will perform
-  
-  
+      refetchInterval: 2000,         // polling refers to feching data on the regular intervals , by default it is set to false if we set any time the query will refetch data on that particular time stamp . In our case i am setting the refechinterval 2 second that means after every 2 second data will refech
+      refetchIntervalInBackground:true  // it will usefull to refetch data even when the brouser is not in focus (ON)
     }
          );
 
