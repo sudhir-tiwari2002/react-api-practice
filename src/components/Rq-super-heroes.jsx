@@ -31,8 +31,17 @@ function RqSuperHeroes() {
     // lets learn about callbacks using react query we are dealing with data fatching sometimes you might want to perform some side- effect when the quwery complete and example to open modal or navigating routes etc
     // react query automatically enjects the data and error into these callbacks 
     onSuccess: onSuccess,
-    onError:onError
-    
+    onError:onError,
+      // Data Transformation :- if you fetch data from any API before i am pretty sure you have run into the synario of leaving 
+      // to transfor data into the format that the frontend component can consume, the backend folks have theri own convension
+      // and the frontend might have different convention to help these synarios react query provides select configuration option 
+      // which we can specify usequery hook
+      // in the api you can check that Api returns an array of object and we extract data from the object 
+
+      select:(data)=>{
+        const superHeroNames = data?.data?.map(hero => hero.name)
+        return superHeroNames
+      },
     }
          );
 
@@ -49,14 +58,25 @@ function RqSuperHeroes() {
     <>
       <h1> welcome from the pages of RQ super Heros</h1>
       <button onClick={refetch} type="button" className="bg-green-300 p-2 rounded-lg">Fetch heroes</button> 
-      {data?.data?.map((item) => (
+      {/* {data?.data?.map((item) => (
         <div key={item?.id}>
           <p>ID of Super hero : {item?.id}</p>
           <p>Name of the Super Hero : {item?.name}</p>
           <p>AlterEgo of the Super Hero : {item?.alterEgo}</p>
         </div>
        
-      ))}
+      ))} */}
+
+      {/* here just extract (transform) the superheroname by the whole data  
+      
+      data transformation is also incule data filtering i have used map method but here can be use filter method to select few elements
+      from the data returned
+      */}
+      {
+        data.map(heroName=>{
+          return(<div key={heroName}>{heroName}</div>)
+        })
+      }
        
     </>
   );
