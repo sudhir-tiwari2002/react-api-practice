@@ -10,6 +10,7 @@ import {ReactQueryDevtools} from 'react-query/devtools'
 import Menu from './components/Menu';
 import TraditonalSuperHeroes from './components/Traditonal-super-heroes';
 import RqSuperHeroes from './components/Rq-super-heroes';
+import NewSuperhero from './components/newSuperhero';
 
 const queryClient = new QueryClient()
 
@@ -25,6 +26,8 @@ function App() {
           <Route path="/traditional-super-heroes" element={<TraditonalSuperHeroes />} />
           <Route path="/home" element={<Home />} />
           <Route path="/rq-super-heroes" element={<RqSuperHeroes />} />
+          <Route path="/new-super-hero/:heroId" element={<NewSuperhero/>} />
+
         </Routes>
       </BrowserRouter>
       </div>

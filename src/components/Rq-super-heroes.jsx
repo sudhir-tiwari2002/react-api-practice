@@ -1,5 +1,6 @@
 import React from "react";
 import { useSuperHeroData } from "../hooks/useSuperHeroData";
+import { Link } from "react-router-dom";
 // import { useQuery } from "react-query";
 // import axios from "axios";
 
@@ -60,25 +61,26 @@ function RqSuperHeroes() {
     <>
       <h1> welcome from the pages of RQ super Heros</h1>
       <button onClick={refetch} type="button" className="bg-green-300 p-2 rounded-lg">Fetch heroes</button> 
-      {/* {data?.data?.map((item) => (
+      {data?.data?.map((item) => (
         <div key={item?.id}>
+          <Link to={`/new-super-hero/${item?.id}`}> {item?.name}</Link>
           <p>ID of Super hero : {item?.id}</p>
           <p>Name of the Super Hero : {item?.name}</p>
           <p>AlterEgo of the Super Hero : {item?.alterEgo}</p>
         </div>
        
-      ))} */}
+      ))}
 
       {/* here just extract (transform) the superheroname by the whole data  
       
       data transformation is also incule data filtering i have used map method but here can be use filter method to select few elements
       from the data returned
       */}
-      {
+      {/* {
         data.map(heroName=>{
           return(<div key={heroName}>{heroName}</div>)
         })
-      }
+      } */}
        
     </>
   );
