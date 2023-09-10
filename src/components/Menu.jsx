@@ -8,6 +8,7 @@ function Menu() {
       <li> <Link to="/home">Home</Link ></li>
       <li> <Link to="/traditional-super-heroes">Traditional Super Heroes</Link ></li>
       <li> <Link to="/rq-super-heroes">RQ Super Heros</Link ></li>
+      <li><Link to='/rq-parallel'> Parallel Query Page</Link></li>
 
 
     </ul>

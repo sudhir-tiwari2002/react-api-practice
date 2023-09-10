@@ -3,5 +3,23 @@
     { "id": 1, "name": "Batman", "alterEgo": "Bruce Wyne" },
     { "id": 2, "name": "Superman", "alterEgo": "Clark Kent" },
     { "id": 3, "name": "Wonder Women", "alterEgo": "Prince Diana" }
+  ],
+  "friends":[
+    {
+      "id": 1,
+      "name": "Ashish Raj"
+    },
+    {
+      "id": 2,
+      "name": "Manish Sharma"
+    },
+    {
+      "id": 3,
+      "name": "Sudhir Tiwari"
+    },
+    {
+      "id": 4,
+      "name": "Awneesh Mishra"
+    }
   ]
 }
