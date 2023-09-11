@@ -1,10 +1,32 @@
 {
   "superheroes": [
-    { "id": 1, "name": "Batman", "alterEgo": "Bruce Wyne" },
-    { "id": 2, "name": "Superman", "alterEgo": "Clark Kent" },
-    { "id": 3, "name": "Wonder Women", "alterEgo": "Prince Diana" }
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wyne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Women",
+      "alterEgo": "Prince Diana"
+    },
+    {
+      "name": "sudhir",
+      "alterEgo": "sudhir",
+      "id": 4
+    },
+    {
+      "name": "sudhir",
+      "alterEgo": "sudhir",
+      "id": 5
+    }
   ],
-  "friends":[
+  "friends": [
     {
       "id": 1,
       "name": "Ashish Raj"
@@ -22,50 +44,54 @@
       "name": "Awneesh Mishra"
     }
   ],
-  "users":[
+  "users": [
     {
-      "id":"skt@gmail.com",
-      "channelId":"SudhirTiwari"
+      "id": "skt@gmail.com",
+      "channelId": "SudhirTiwari"
     }
   ],
-  "channels":[
+  "channels": [
     {
-      "id":"SudhirTiwari",
-      "courses":["react","vue","angular"]
+      "id": "SudhirTiwari",
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
     }
   ],
-  "colors":[
+  "colors": [
     {
-      "id":1,
-      "color":"red"
+      "id": 1,
+      "color": "red"
     },
     {
-      "id":2,
-      "color":"blue"
+      "id": 2,
+      "color": "blue"
     },
     {
-      "id":3,
-      "color":"green"
+      "id": 3,
+      "color": "green"
     },
     {
-      "id":4,
-      "color":"yellow"
+      "id": 4,
+      "color": "yellow"
     },
     {
-      "id":5,
-      "color":"Orange"
+      "id": 5,
+      "color": "Orange"
     },
     {
-      "id":6,
-      "color":"violet"
+      "id": 6,
+      "color": "violet"
     },
     {
-      "id":7,
-      "color":"skyblue"
+      "id": 7,
+      "color": "skyblue"
     },
     {
-      "id":8,
-      "color":"pink"
+      "id": 8,
+      "color": "pink"
     }
   ]
 }
