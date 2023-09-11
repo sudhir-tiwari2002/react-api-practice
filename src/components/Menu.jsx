@@ -12,6 +12,7 @@ function Menu() {
       <li><Link to='/rq-dynamic'> Dynamic Parallel Queries</Link></li>
       <li><Link to='/dependent-queries'> Dependent Queries</Link></li>
       <li><Link to='/paginate-queries'> Paginate Queries</Link></li>
+      <li><Link to='/infinite-queries'> Infinite Queries</Link></li>
 
 
 
