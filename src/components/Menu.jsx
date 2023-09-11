@@ -11,6 +11,7 @@ function Menu() {
       <li><Link to='/rq-parallel'> Parallel Query Page</Link></li>
       <li><Link to='/rq-dynamic'> Dynamic Parallel Queries</Link></li>
       <li><Link to='/dependent-queries'> Dependent Queries</Link></li>
+      <li><Link to='/paginate-queries'> Paginate Queries</Link></li>
 
 
 
